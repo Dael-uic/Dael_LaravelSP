@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('components.layout')
 
 @section('title', 'Welcome to the Student Portal')
 
