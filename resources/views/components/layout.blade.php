@@ -14,22 +14,6 @@
             min-height: 100vh;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        .navbar {
-            background: rgba(255, 255, 255, 0.95) !important;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .navbar-brand {
-            font-weight: bold;
-            color: #667eea !important;
-        }
-        .nav-link {
-            color: #333 !important;
-            font-weight: 500;
-        }
-        .nav-link:hover {
-            color: #667eea !important;
-        }
         .container {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 15px;
@@ -101,10 +85,12 @@
             font-size: 3rem;
             font-weight: bold;
             margin-bottom: 1rem;
+            color: #333; /* Dark color for visibility */
         }
         .hero-section p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
+            color: #555; /* Slightly lighter dark for readability */
         }
         .student-card {
             transition: transform 0.3s ease;
@@ -115,34 +101,14 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="{{ route('home') }}"><i class="fas fa-graduation-cap"></i> Student Portal</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}"><i class="fas fa-home"></i> Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('students.index') }}"><i class="fas fa-users"></i> Students</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('students.create') }}"><i class="fas fa-plus"></i> Add Student</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <x-card />
     <div class="container">
         @yield('content')
     </div>
     <footer class="text-center py-4" style="color: white;">
-        <p>&copy; 2026 Student Portal. Built with Laravel & Bootstrap.</p>
+        <p>&copy; Student Portal. By: Henry Philip Dael.</p>
     </footer>
-    <!-- Bootstrap JS -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -11,3 +11,5 @@
     <a href="/students" class="btn">Find Students</a>
 </body>
 </html>
+
+{{-- Redundant Code. Only here for remembrance purposes. --}}

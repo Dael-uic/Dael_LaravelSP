@@ -1,0 +1,16 @@
+Github Upload
+
+git status
+git status
+git add .
+git commit -m "Initial commit: Student Portal with enhanced UI"
+git remote add origin https://github.com/YOUR_USERNAME/Dael_LaravelSP.git
+git remote -v
+git push -u origin main
+
+Delete ReadME.md
+
+del README.md
+git add README.md
+git commit -m "Remove README.md file"
+git push
